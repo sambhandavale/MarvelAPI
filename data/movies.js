@@ -24,7 +24,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/iron-man",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -76,7 +76,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/iron-man-2",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -102,7 +102,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/thor",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -128,7 +128,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/captain-america-the-first-avenger",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -154,7 +154,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/the-avengers",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -180,7 +180,7 @@ const movies = {
             "prerequisites": ["mms1", "mms3"],
             "info_link": "https://www.marvel.com/movies/iron-man-3",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -206,7 +206,7 @@ const movies = {
             "prerequisites": ["mms4"],
             "info_link": "https://www.marvel.com/movies/thor-the-dark-world",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -232,7 +232,7 @@ const movies = {
             "prerequisites": ["mms5"],
             "info_link": "https://www.marvel.com/movies/captain-america-the-winter-soldier",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -258,7 +258,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/guardians-of-the-galaxy",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -284,7 +284,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/avengers-age-of-ultron",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -310,7 +310,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/ant-man",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -336,7 +336,7 @@ const movies = {
             "prerequisites": ["mms6", "mms11"],
             "info_link": "https://www.marvel.com/movies/captain-america-civil-war",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -362,7 +362,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/doctor-strange",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -388,7 +388,7 @@ const movies = {
             "prerequisites": ["mms10"],
             "info_link": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -414,7 +414,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/spider-man-homecoming",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -440,7 +440,7 @@ const movies = {
             "prerequisites": ["mms4"],
             "info_link": "https://www.marvel.com/movies/thor-ragnarok",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -466,7 +466,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/black-panther",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -492,7 +492,7 @@ const movies = {
             "prerequisites": ["mms6", "mms10", "mms11", "mms13", "mms15", "mms17"],
             "info_link": "https://www.marvel.com/movies/avengers-infinity-war",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -518,7 +518,7 @@ const movies = {
             "prerequisites": ["mms12"],
             "info_link": "https://www.marvel.com/movies/ant-man-and-the-wasp",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -544,7 +544,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/captain-marvel",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -570,7 +570,7 @@ const movies = {
             "prerequisites": ["mms6", "mms10", "mms11", "mms13", "mms15", "mms17", "mms19"],
             "info_link": "https://www.marvel.com/movies/avengers-endgame",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -596,7 +596,7 @@ const movies = {
             "prerequisites": ["mms22"],
             "info_link": "https://www.marvel.com/movies/spider-man-far-from-home",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -622,7 +622,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/black-widow",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -648,7 +648,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/shang-chi-and-the-legend-of-the-ten-rings",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -674,7 +674,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/eternals",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -700,7 +700,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/spider-man-no-way-home",
             "studios": ["Marvel Studios", "Sony Pictures"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -726,7 +726,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/doctor-strange-in-the-multiverse-of-madness",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -752,7 +752,7 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/thor-love-and-thunder",
             "studios": ["Marvel Studios"],
-            "homepage": 1
+            "homepage": 0
         },
         {
             "type": "movie",
@@ -778,8 +778,164 @@ const movies = {
             "prerequisites": [],
             "info_link": "https://www.marvel.com/movies/black-panther-wakanda-forever",
             "studios": ["Marvel Studios"],
+            "homepage": 0
+        },
+        {
+            "type": "movie",
+            "title": "ant_man_and_the_wasp_quantumania",
+            "name": "Ant-Man and the Wasp: Quantumania",
+            "id": "mms31",
+            "phase": 5,
+            "year_of_release": 2023,
+            "release_date": "2023-02-17",
+            "genre": ["Action", "Adventure", "Sci-Fi"],
+            "language_code": "en",
+            "language_name": "ENG",
+            "default_review": "Scott Lang and Hope van Dyne face new threats in the quantum realm.",
+            "movie_duration": "2h 5m",
+            "trailer_link": "https://www.youtube.com/watch?v=ZlNFpri-Y40",
+            "watch_now_link": "https://www.disneyplus.com/movies/ant-man-and-the-wasp-quantumania/4cX6N9CpN4Vb",
+            "description": "Scott Lang and Hope van Dyne, along with Hank Pym and Janet van Dyne, explore the Quantum Realm, where they encounter strange creatures and embark on an adventure that pushes them beyond the limits of what they thought was possible.",
+            "short_description": "Ant-Man and the Wasp face new threats in the quantum realm.",
+            "creator": "Stan Lee",
+            "director": "Peyton Reed",
+            "imdb_rating": 6.4,
+            "movies_page": 1,
+            "prerequisites": [],
+            "info_link": "https://www.marvel.com/movies/ant-man-and-the-wasp-quantumania",
+            "studios": ["Marvel Studios"],
+            "homepage": 0
+        },
+        {
+            "type": "movie",
+            "title": "guardians_of_the_galaxy_vol_3",
+            "name": "Guardians of the Galaxy Vol. 3",
+            "id": "mms32",
+            "phase": 5,
+            "year_of_release": 2023,
+            "release_date": "2023-05-05",
+            "genre": ["Action", "Adventure", "Sci-Fi"],
+            "language_code": "en",
+            "language_name": "ENG",
+            "default_review": "The Guardians embark on a mission to save the universe once again.",
+            "movie_duration": "2h 30m",
+            "trailer_link": "https://www.youtube.com/watch?v=u3V5KDHRQvk",
+            "watch_now_link": "https://www.disneyplus.com/movies/guardians-of-the-galaxy-vol-3/3cYHhXFxTj7R",
+            "description": "The Guardians of the Galaxy face new challenges as they attempt to protect one of their own from a mysterious force.",
+            "short_description": "The Guardians embark on a new mission to save the universe.",
+            "creator": "Stan Lee",
+            "director": "James Gunn",
+            "imdb_rating": 8.0,
+            "movies_page": 1,
+            "prerequisites": [],
+            "info_link": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-3",
+            "studios": ["Marvel Studios"],
+            "homepage": 0
+        },
+        {
+            "type": "movie",
+            "title": "the_marvels",
+            "name": "The Marvels",
+            "id": "mms33",
+            "phase": 5,
+            "year_of_release": 2023,
+            "release_date": "2023-11-10",
+            "genre": ["Action", "Adventure", "Sci-Fi"],
+            "language_code": "en",
+            "language_name": "ENG",
+            "default_review": "Captain Marvel, Ms. Marvel, and Monica Rambeau team up to face a new cosmic threat.",
+            "movie_duration": "2h 10m",
+            "trailer_link": "https://www.youtube.com/watch?v=cZ8YOo-lzAc",
+            "watch_now_link": "https://www.disneyplus.com/movies/the-marvels/1c2dPLaGHoSj",
+            "description": "Carol Danvers, Kamala Khan, and Monica Rambeau must work together when their powers become entangled, leading them to face a formidable cosmic threat.",
+            "short_description": "Captain Marvel, Ms. Marvel, and Monica Rambeau face a new cosmic threat.",
+            "creator": "Stan Lee",
+            "director": "Nia DaCosta",
+            "imdb_rating": 6.2,
+            "movies_page": 1,
+            "prerequisites": [],
+            "info_link": "https://www.marvel.com/movies/the-marvels",
+            "studios": ["Marvel Studios"],
+            "homepage": 0
+        },        
+        {
+            "type": "movie",
+            "title": "deadpool_&_wolverine",
+            "name": "Deadpool & Wolverine",
+            "id": "mms34",
+            "phase": 5,
+            "year_of_release": 2024,
+            "release_date": "2024-07-26",
+            "genre": ["Action", "Comedy", "Adventure"],
+            "language_code": "en",
+            "language_name": "ENG",
+            "default_review": "Deadpool returns with more action, comedy, and breaking the fourth wall.",
+            "movie_duration": "2h 12m",
+            "trailer_link": "https://www.youtube.com/watch?v=73_1biulkYk&t=7s",
+            "watch_now_link": "https://www.disneyplus.com/movies/deadpool-3/5R6ZnqCFl8Hl",
+            "description": "Deadpool teams up with unlikely allies to face a new threat in this action-packed and hilarious adventure.",
+            "short_description": "Deadpool returns with more action and comedy.",
+            "creator": "Rob Liefeld",
+            "director": "Shawn Levy",
+            "imdb_rating": "NA",
+            "movies_page": 0,
+            "prerequisites": [],
+            "info_link": "https://www.marvel.com/movies/deadpool-3",
+            "studios": ["Marvel Studios"],
             "homepage": 1
-        }             
+        },
+        {
+            "type": "movie",
+            "title": "captain_america_brave_new_world",
+            "name": "Captain America: Brave New World",
+            "id": "mms36",
+            "phase": 5,
+            "year_of_release": 2024,
+            "release_date": "2024-05-03",
+            "genre": ["Action", "Adventure", "Sci-Fi"],
+            "language_code": "en",
+            "language_name": "ENG",
+            "default_review": "Sam Wilson takes on the mantle of Captain America and faces new global threats.",
+            "movie_duration": "2h 10m",
+            "trailer_link": "https://www.youtube.com/watch?v=lZTl8_mHw5o",
+            "watch_now_link": "https://www.disneyplus.com/movies/captain-america-4-new-world-order/2G9K8bR0D8vJ",
+            "description": "Sam Wilson, the new Captain America, leads a team to combat a global conspiracy and face powerful adversaries.",
+            "short_description": "Sam Wilson as Captain America faces new threats.",
+            "creator": "Jack Kirby",
+            "director": "Julius Onah",
+            "imdb_rating": 7.5,
+            "movies_page": 0,
+            "prerequisites": [],
+            "info_link": "https://www.marvel.com/movies/captain-america-4-new-world-order",
+            "studios": ["Marvel Studios"],
+            "homepage": 1
+        },
+        {
+            "type": "movie",
+            "title": "thunderbolts",
+            "name": "Thunderbolts",
+            "id": "mms37",
+            "phase": 5,
+            "year_of_release": 2024,
+            "release_date": "2024-07-26",
+            "genre": ["Action", "Adventure", "Sci-Fi"],
+            "language_code": "en",
+            "language_name": "ENG",
+            "default_review": "A team of anti-heroes is assembled to tackle threats too dangerous for regular heroes.",
+            "movie_duration": "2h 8m",
+            "trailer_link": "https://www.youtube.com/watch?v=Bke9wvobJa8",
+            "watch_now_link": "https://www.disneyplus.com/movies/thunderbolts/4G9L9dF0H8sK",
+            "description": "The Thunderbolts, a team of anti-heroes and reformed villains, are brought together to take on missions that no one else can handle.",
+            "short_description": "A team of anti-heroes tackles dangerous missions.",
+            "creator": "Kurt Busiek",
+            "director": "Jake Schreier",
+            "imdb_rating": 7.2,
+            "movies_page": 0,
+            "prerequisites": [],
+            "info_link": "https://www.marvel.com/movies/thunderbolts",
+            "studios": ["Marvel Studios"],
+            "homepage": 1
+        }          
     ]
 };
 
