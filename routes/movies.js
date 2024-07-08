@@ -9,7 +9,7 @@ import movieRoute from '../routes/movies/movieRoute.js'
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    const { title, id, studios, language_code, phase, year, genre, movie } = req.query;
+    const { title, id, studios, language_code, phase, year, genre, movie, onlystudios } = req.query;
     let filteredMovies = moviesData.movie;
 
     if (title) {
@@ -32,7 +32,9 @@ router.get('/', (req, res) => {
         filteredMovies = filteredMovies.filter(movie => movie.genre.includes(genre) && movie.phase.toString() === phase);
     }if (movie){
         filteredMovies = filteredMovies.filter(movie1 => movie1.version.split("-")[0] === movie);
-    }
+    }if (onlystudios) {
+        filteredMovies = filteredMovies.filter(movie => movie.studios.length === 1 && movie.studios.includes(onlystudios));
+    }    
     
     
     if (filteredMovies.length === 0) {
