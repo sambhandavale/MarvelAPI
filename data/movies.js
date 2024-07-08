@@ -1401,7 +1401,7 @@ const movies = {
             "movies_page": 0,
             "prerequisites": [],
             "info_link": "https://www.foxmovies.com/movies/fantastic-four",
-            "studios": ["20th Century Fox"],
+            "studios": ["Fox Studios"],
             "homepage": 0
         },
         {
@@ -1428,7 +1428,7 @@ const movies = {
             "movies_page": 0,
             "prerequisites": [],
             "info_link": "https://www.foxmovies.com/movies/fantastic-four-rise-of-the-silver-surfer",
-            "studios": ["20th Century Fox"],
+            "studios": ["Fox Studios"],
             "homepage": 0
         },
         {
@@ -1455,7 +1455,7 @@ const movies = {
             "movies_page": 0,
             "prerequisites": [],
             "info_link": "https://www.foxmovies.com/movies/fantastic-four",
-            "studios": ["20th Century Fox"],
+            "studios": ["Fox Studios"],
             "homepage": 0
         },
         {
