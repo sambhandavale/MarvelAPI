@@ -1,8 +1,10 @@
 import express from 'express';
 import showsData from '../data/shows.js';
-import netflixRouter from '../routes/shows/netflixRoute.js'
 
-const router = express.Router();
+import netflixRouter from '../routes/shows/netflixRoute.js'
+import propertyRoute from '../routes/shows/propertyRoute.js'
+
+const router = express.Router(); 
 
 router.get('/', (req, res) => {
     const { title, id, network, genre, year } = req.query;
@@ -32,6 +34,7 @@ router.get('/', (req, res) => {
     }
 });
 
+router.use('/property', propertyRoute);
 router.use('/netflix', netflixRouter);
 
 

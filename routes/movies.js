@@ -40,66 +40,11 @@ router.get('/', (req, res) => {
     if (filteredMovies.length === 0) {
         res.status(404).json({ error: 'Movie not found' });
     } else {
-        res.json(filteredMovies);
+        res.json(filteredMovies); 
     }
 });
 
-// router.post('/property/:propertyname', (req, res) => {
-//     const { propertyname } = req.params;
-//     const { propertyValue } = req.body;
-
-//     if (!propertyname || !propertyValue) {
-//         return res.status(400).json({ error: 'Property name and value are required.' });
-//     }
-
-//     moviesData.movie.forEach(movie => {
-//         movie[propertyname] = propertyValue;
-//     });
-
-//     const __filename = fileURLToPath(import.meta.url);
-//     const filePath = path.resolve(path.dirname(__filename), '../data/movies.js');
-//     const newData = `export default ${JSON.stringify(moviesData, null, 2)};`;
-
-//     fs.writeFile(filePath, newData, err => {
-//         if (err) {
-//             console.error('Error writing file:', err);
-//             return res.status(500).json({ error: 'Error saving data.' });
-//         }
-
-//         res.status(200).json({
-//             message: `Added ${propertyname} property with value ${propertyValue} to all movies.`,
-//         });
-//     });
-// });
-
-// router.delete('/property/:propertyname', (req, res) => {
-//     const { propertyname } = req.params;
-
-//     if (!propertyname) {
-//         return res.status(400).json({ error: 'Property name is required.' });
-//     }
-
-//     moviesData.movie.forEach(movie => {
-//         delete movie[propertyname];
-//     });
-
-//     const __filename = fileURLToPath(import.meta.url);
-//     const filePath = path.resolve(path.dirname(__filename), '../data/movies.js');
-//     const newData = `export default ${JSON.stringify(moviesData, null, 2)};`;
-
-//     fs.writeFile(filePath, newData, err => {
-//         if (err) {
-//             console.error('Error writing file:', err);
-//             return res.status(500).json({ error: 'Error saving data.' });
-//         }
-
-//         res.status(200).json({
-//             message: `Deleted ${propertyname} property from all movies.`,
-//         });
-//     });
-// });
-
-router.use('/property', propertyRoute)
+router.use('/property', propertyRoute);
 router.use('/phase', phaseRouter);
 router.use('/year', yearRoute);
 router.use('/id', idRoute);
