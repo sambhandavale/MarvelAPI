@@ -7,6 +7,21 @@ import moviesRouter from './routes/movies.js';
 const app = express();
 const port = 5000;
 
+// const validApiKey = '1234';
+
+// // to use the API add a parameter apiKey=1234 to the route 
+
+// const validateApiKey = (req, res, next) => {
+//     const apiKey = req.headers['myKey'] || req.query.apiKey;
+
+//     if (!apiKey || apiKey !== validApiKey) {
+//         return res.status(401).json({ error: 'Unauthorized. Invalid API key.' });
+//     }
+//     next();
+// };
+
+// app.use('/api', validateApiKey);
+
 app.use(express.json());
 app.use(cors());
 
