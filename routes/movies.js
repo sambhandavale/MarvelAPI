@@ -1,13 +1,11 @@
 import express from 'express';
 import moviesData from '../data/movies.js';
-import fs from 'fs';
-import { fileURLToPath } from 'url';
-import path from 'path';
 
 import phaseRouter from './movies/phaseRoute.js'
 import yearRoute from '../routes/movies/yearRoute.js'
 import idRoute from '../routes/movies/idRoute.js'
 import movieRoute from '../routes/movies/movieRoute.js'
+import propertyRoute from '../routes/movies/propertyRoute.js'
 
 const router = express.Router();
 
@@ -39,7 +37,6 @@ router.get('/', (req, res) => {
         filteredMovies = filteredMovies.filter(movie => movie.studios.length === 1 && movie.studios.includes(onlystudios));
     }
 
-
     if (filteredMovies.length === 0) {
         res.status(404).json({ error: 'Movie not found' });
     } else {
@@ -47,34 +44,62 @@ router.get('/', (req, res) => {
     }
 });
 
-router.post('/property/:propertyname', (req, res) => {
-    const { propertyname } = req.params;
-    const { propertyValue } = req.body; 
+// router.post('/property/:propertyname', (req, res) => {
+//     const { propertyname } = req.params;
+//     const { propertyValue } = req.body;
 
-    if (!propertyname || !propertyValue) {
-        return res.status(400).json({ error: 'Property name and value are required.' });
-    }
+//     if (!propertyname || !propertyValue) {
+//         return res.status(400).json({ error: 'Property name and value are required.' });
+//     }
 
-    moviesData.movie.forEach(movie => {
-        movie[propertyname] = propertyValue;
-    });
+//     moviesData.movie.forEach(movie => {
+//         movie[propertyname] = propertyValue;
+//     });
 
-    const __filename = fileURLToPath(import.meta.url);
-    const filePath = path.resolve(path.dirname(__filename), '../data/movies.js');
-    const newData = `export default ${JSON.stringify(moviesData, null, 2)};`;
+//     const __filename = fileURLToPath(import.meta.url);
+//     const filePath = path.resolve(path.dirname(__filename), '../data/movies.js');
+//     const newData = `export default ${JSON.stringify(moviesData, null, 2)};`;
 
-    fs.writeFile(filePath, newData, err => {
-        if (err) {
-            console.error('Error writing file:', err);
-            return res.status(500).json({ error: 'Error saving data.' });
-        }
+//     fs.writeFile(filePath, newData, err => {
+//         if (err) {
+//             console.error('Error writing file:', err);
+//             return res.status(500).json({ error: 'Error saving data.' });
+//         }
 
-        res.status(200).json({
-            message: `Added ${propertyname} property with value ${propertyValue} to all movies.`,
-        });
-    });
-});
+//         res.status(200).json({
+//             message: `Added ${propertyname} property with value ${propertyValue} to all movies.`,
+//         });
+//     });
+// });
 
+// router.delete('/property/:propertyname', (req, res) => {
+//     const { propertyname } = req.params;
+
+//     if (!propertyname) {
+//         return res.status(400).json({ error: 'Property name is required.' });
+//     }
+
+//     moviesData.movie.forEach(movie => {
+//         delete movie[propertyname];
+//     });
+
+//     const __filename = fileURLToPath(import.meta.url);
+//     const filePath = path.resolve(path.dirname(__filename), '../data/movies.js');
+//     const newData = `export default ${JSON.stringify(moviesData, null, 2)};`;
+
+//     fs.writeFile(filePath, newData, err => {
+//         if (err) {
+//             console.error('Error writing file:', err);
+//             return res.status(500).json({ error: 'Error saving data.' });
+//         }
+
+//         res.status(200).json({
+//             message: `Deleted ${propertyname} property from all movies.`,
+//         });
+//     });
+// });
+
+router.use('/property', propertyRoute)
 router.use('/phase', phaseRouter);
 router.use('/year', yearRoute);
 router.use('/id', idRoute);
