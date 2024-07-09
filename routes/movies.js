@@ -1,5 +1,8 @@
 import express from 'express';
-import moviesData from '../data/movies.js'; 
+import moviesData from '../data/movies.js';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 import phaseRouter from './movies/phaseRoute.js'
 import yearRoute from '../routes/movies/yearRoute.js'
@@ -26,32 +29,55 @@ router.get('/', (req, res) => {
         filteredMovies = filteredMovies.filter(movie => movie.year_of_release.toString() === year);
     } else if (genre) {
         filteredMovies = filteredMovies.filter(movie => movie.genre.includes(genre));
-    }if (genre && year){
+    } if (genre && year) {
         filteredMovies = filteredMovies.filter(movie => movie.genre.includes(genre) && movie.year_of_release.toString() === year);
-    }if (genre && phase){
+    } if (genre && phase) {
         filteredMovies = filteredMovies.filter(movie => movie.genre.includes(genre) && movie.phase.toString() === phase);
-    }if (movie){
+    } if (movie) {
         filteredMovies = filteredMovies.filter(movie1 => movie1.version.split("-")[0] === movie);
-    }if (onlystudios) {
+    } if (onlystudios) {
         filteredMovies = filteredMovies.filter(movie => movie.studios.length === 1 && movie.studios.includes(onlystudios));
-    }    
-    
-    
+    }
+
+
     if (filteredMovies.length === 0) {
-        res.status(404).json({ error: 'Movie not found' }); 
+        res.status(404).json({ error: 'Movie not found' });
     } else {
         res.json(filteredMovies);
     }
 });
 
+router.post('/property/:propertyname', (req, res) => {
+    const { propertyname } = req.params;
+    const { propertyValue } = req.body; 
+
+    if (!propertyname || !propertyValue) {
+        return res.status(400).json({ error: 'Property name and value are required.' });
+    }
+
+    moviesData.movie.forEach(movie => {
+        movie[propertyname] = propertyValue;
+    });
+
+    const __filename = fileURLToPath(import.meta.url);
+    const filePath = path.resolve(path.dirname(__filename), '../data/movies.js');
+    const newData = `export default ${JSON.stringify(moviesData, null, 2)};`;
+
+    fs.writeFile(filePath, newData, err => {
+        if (err) {
+            console.error('Error writing file:', err);
+            return res.status(500).json({ error: 'Error saving data.' });
+        }
+
+        res.status(200).json({
+            message: `Added ${propertyname} property with value ${propertyValue} to all movies.`,
+        });
+    });
+});
+
 router.use('/phase', phaseRouter);
-
 router.use('/year', yearRoute);
-
 router.use('/id', idRoute);
-
 router.use('/movie', movieRoute);
-
-
 
 export default router;
