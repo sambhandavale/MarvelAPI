@@ -10,7 +10,7 @@ import propertyRoute from '../routes/movies/propertyRoute.js'
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    const { title, id, studios, language_code, phase, year, genre, movie, onlystudios } = req.query;
+    const { title, id, studios, language_code, phase, year, genre, movie, onlystudios,rating } = req.query;
     let filteredMovies = moviesData.movie;
 
     if (title) {
@@ -31,10 +31,12 @@ router.get('/', (req, res) => {
         filteredMovies = filteredMovies.filter(movie => movie.genre.includes(genre) && movie.year_of_release.toString() === year);
     } if (genre && phase) {
         filteredMovies = filteredMovies.filter(movie => movie.genre.includes(genre) && movie.phase.toString() === phase);
-    } if (movie) {
+    } else if (movie) {
         filteredMovies = filteredMovies.filter(movie1 => movie1.version.split("-")[0] === movie);
-    } if (onlystudios) {
+    } else if (onlystudios) {
         filteredMovies = filteredMovies.filter(movie => movie.studios.length === 1 && movie.studios.includes(onlystudios));
+    } else if (rating) {
+        filteredMovies = filteredMovies.filter(movie => movie.imdb_rating >= rating && movie.imdb_rating != 'NA');
     }
 
     if (filteredMovies.length === 0) {
