@@ -1,7 +1,6 @@
 # 🎬 Marvel Movie & Show API
 
 <div align="center">
-  <img src="/placeholder.svg?height=150&width=150" alt="Movie & Show API Logo" width="150" height="150"/>
   <p><strong>An API to fetch movie and TV show data with powerful filtering options.</strong></p>
 </div>
 
@@ -12,7 +11,7 @@ The **Movie & Show API** allows users to retrieve detailed information about mov
 ## 🌍 Base URL
 
 \`\`\`
-http://localhost:5000/api
+https://marvel-api-mcu.vercel.app/
 \`\`\`
 
 ## 🔍 API Endpoints
@@ -95,41 +94,7 @@ GET /api/shows/netflix
 |------------|---------|
 | Node.js    | Backend runtime |
 | Express.js | Web framework |
-| MongoDB    | Database for storing movies & shows |
 | REST API   | API structure for requests & responses |
-
-## 📦 Installation & Setup
-
-1. **Clone the Repository**
-   \`\`\`bash
-   git clone https://github.com/your-username/movie-show-api.git
-   cd movie-show-api
-   \`\`\`
-
-2. **Install Dependencies**
-   \`\`\`bash
-   npm install
-   \`\`\`
-
-3. **Start the Server**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-   Server will start at http://localhost:5000/api
-
-## 📊 System Architecture
-
-<div align="center">
-  <img src="/placeholder.svg?height=400&width=600" alt="System Architecture" width="600" height="400"/>
-</div>
-
-## 🚀 Deployment
-
-To deploy the API, you can use services like:
-- Heroku
-- Vercel
-- AWS Lambda
-- DigitalOcean
 
 ## 🤝 Contributing
 
@@ -139,11 +104,6 @@ We welcome contributions! To contribute:
 2. Create a new branch (\`feature-xyz\`)
 3. Commit your changes
 4. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
 ---
 
 <div align="center">
